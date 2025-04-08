@@ -1,8 +1,18 @@
 // src/app/products/[id]/page.tsx
 import Image from 'next/image'
 import products from '../data'
-
-const ProductPage = ({ params }: { params: { id: string } }) => {
+import { FC } from 'react'
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+type Props = {
+  params: {
+    id: string;
+  };
+};
+const ProductPage: FC<PageProps> = ({ params }: Props) => {
   const productId = parseInt(params.id)
   const product = products.find((p) => p.id === productId)
 
