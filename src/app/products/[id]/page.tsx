@@ -1,18 +1,13 @@
 // src/app/products/[id]/page.tsx
 import Image from 'next/image'
 import products from '../data'
-import { FC } from 'react'
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
+
 type Props = {
   params: {
     id: string;
   };
 };
-const ProductPage: FC<PageProps> = ({ params }: Props) => {
+export default function ProductPage({ params }: Props) {
   const productId = parseInt(params.id)
   const product = products.find((p) => p.id === productId)
 
@@ -49,4 +44,3 @@ const ProductPage: FC<PageProps> = ({ params }: Props) => {
   )
 }
 
-export default ProductPage
