@@ -37,6 +37,7 @@ export default function Home() {
 				String(1 - progress)
 			)
 		}
+		
 		if (progressContent.current) {
 			progressContent.current.textContent = `${Math.ceil(time / 1000)}s`
 		}
