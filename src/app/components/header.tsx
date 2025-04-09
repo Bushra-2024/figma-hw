@@ -1,8 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import cart from '../../../public/cart.png'
+import LanguageSwitcher from './LanguageSwitcher'
+import { useTranslation } from 'react-i18next'
 
 const Header = () => {
+	const { t } = useTranslation()
+
 	return (
 		<header className='flex lg:flex-row flex-col justify-between items-center max-w-[1400px]  px-[10%] py-[1.5%] mb-[2%] shadow-md shadow-[rgba(16,126,95,0.4)] m-auto'>
 			<p className='text-2xl font-bold font-[WindSong] text-[30px] text-[#107E5F]'>
@@ -14,19 +18,19 @@ const Header = () => {
 					href='/'
 					className='text-[#107E5F] hover:border-b-2 border-[#107E5F] text-[17px]'
 				>
-					Home
+					{t('nav.home')}
 				</Link>
 				<Link
 					href='/products'
 					className='text-[#107E5F] hover:border-b-2 border-[#107E5F] text-[17px]'
 				>
-					Products
+					{t('nav.products')}
 				</Link>
 				<Link
 					href='/categories'
 					className='text-[#107E5F] hover:border-b-2 border-[#107E5F] text-[17px]'
 				>
-					Categories
+					{t('nav.categories')}
 				</Link>
 			</nav>
 
@@ -40,9 +44,11 @@ const Header = () => {
 				</Link>
 				<Link href='/login/login'>
 					<button className='w-[120px] h-[40px] text-[#107E5F] border-2 border-[#107E5F] hover:bg-[#107E5F] hover:text-white transition'>
-						LOGIN
+					{t('nav.login')}
+
 					</button>
 				</Link>
+				<LanguageSwitcher />
 			</div>
 		</header>
 	)

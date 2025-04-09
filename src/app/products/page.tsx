@@ -2,9 +2,11 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import products from './data'
+import useProducts from './data' // ✅ use the function
 
 const Products = () => {
+  const products = useProducts() // ✅ call it to get the array
+
   return (
     <div className="p-[2%] px-[5%]">
       <h1 className="font-[WindSong] font-semibold text-[40px] text-[#107E5F] pl-[5%]">Products</h1>

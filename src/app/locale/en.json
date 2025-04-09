@@ -1,0 +1,103 @@
+{
+	"header": {
+		"title": "Welcome to Our Store",
+		"subtitle": "Find amazing products!"
+	},
+	"nav": {
+		"home": "Home",
+		"products": "Products",
+		"categories": "Categories",
+		"login": "LOGIN",
+		"explore": "Explore Now"
+	},
+	"topCategories": {
+		"heading": "Our Top Categories",
+		"classicTitle": "Classic Edge",
+		"classicDesc": "Timeless designs inspired by the classic aesthetic.",
+		"ancestralTitle": "Ancestral Attire",
+		"ancestralDesc": "A deep dive into cultural and historical clothing.",
+		"vintageTitle": "Vintage Jewelry",
+		"vintageDesc": "Exquisite handmade jewelry from a bygone era."
+	 },
+	 "trendingSection": {
+    "heading": "Our Top Trending",
+    "promoMessage": "40% off everything \n Designer Party Wear Traditional Clothing"
+  },
+  "newArrivalsSection": {
+    "heading": "Just In",
+    "newArrivals": "New Arrivals",
+    "description": "Winter’s coming, and we’re all about stylish, cozy clothes to keep you warm and looking great! Check out our new collection",
+    "products": [
+      {
+        "name": "Black Cross-Stitch Embroidered Chapan | Velvet Party Wear Cardigan",
+        "price": "$50.00",
+        "oldPrice": "$60.00"
+      },
+      {
+        "name": "Multi Color Patch Blazer | Fancy Embroidered Blazer",
+        "price": "$75.00",
+        "oldPrice": "$85.00"
+      },
+      {
+        "name": "Marron Cherma Embroidered Flower Pattern Dress",
+        "price": "$100.00",
+        "oldPrice": "$110.00"
+      }
+    ]
+  },
+"traditionalWearSection": {
+      "heading": "Traditional Wear",
+      "description": "Traditional wear from Central Asia. Beautifully crafted garments with deep cultural significance.",
+      "imageAlt": "Traditional wear from Central Asia"
+    },
+    "bestSellers": {
+      "top": "Top",
+      "title": "Best Sellers",
+      "product1": {
+        "alt": "Marron Cherma Embroidered Flower Pattern Dress",
+        "name": "Marron Cherma Embroidered Flower Pattern Dress",
+        "price": "$120.00"
+      },
+      "product2": {
+        "alt": "Traditional Afghani Bridal Jewelry Set",
+        "name": "Traditional Afghani Bridal Jewelry Set | Tribal Choker Necklace, Headpiece, Earrings",
+        "price": "$31.50"
+      },
+      "product3": {
+        "alt": "Purple 3 Piece Chermaduzi Embroidered Dress",
+        "name": "Purple 3 Piece Chermaduzi Embroidered Dress | White Charma",
+        "price": "$107.10"
+      },
+      "product4": {
+        "alt": "Bronze Cuff Bracelet",
+        "name": "Bronze Cuff Bracelet | Golden Engraved Bracelet",
+        "price": "$69.00"
+      },
+      "shopNow": "Shop Now"
+    },
+    "footer": {
+      "contactUs": "Contact Us",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "description1": "Discover our curated collection in-store, find your perfect style, and become part of the",
+      "description2": " family."
+    },
+    "products": {
+      "title1": "Green Banarasi Vintage Dress | Balloon Sleeves",
+      "title2": "Black Embroidered Girls Dress | Donball Dar Khamak",
+      "title3": "Purple 3 Piece Chermaduzi Embroidered Dress | White Charma",
+      "title4": "Lawang x Armaghan | Women dress | Khanjar Dozi Dress",
+      "title5": "Traditional Afghani Bridal Jewelry Set | Tribal Choker Necklace, Headpiece, Earrings",
+      "title6": "Antique Afghani Bridal and classic necklace",
+      "title7": "Antique Hazaragi Jewelry Set | Headpiece",
+      "title8": "Bronze Cuff Bracelet | Golden Engraved Bracelet",
+      "title9": "Black Cross-Stitch Embroidered Modern | Party Wear and Classic Dress",
+      "title10": "Traditional Afghani Bridal Jewelry Set | Tribal Choker Necklace, Headpiece, Earrings",
+      "title11": "Embroidered Chapan for Winter | Casual Wear Cardigan",
+      "title12": "Black V-Neck Embroidered Wool Coat"
+    },
+     "productDesc": "Step into culture and heritage with our beautifully handcrafted dress and accessories. Every item reflects intricate tradition and modern elegance—perfect for festive events or everyday charm.",
+  "addToCart": "Add to Cart",
+	"shopPurpose": "Shop with purpose; every Armaghan is a treasure waiting to enhance your unique style, beautifully blending traditional elegance with modern flair."
+}
