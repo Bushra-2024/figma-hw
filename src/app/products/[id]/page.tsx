@@ -1,20 +1,19 @@
 'use client'
 
 import Image from 'next/image'
-import { use } from 'react'
-import { useTranslation } from 'react-i18next'
 import useProducts from '../data'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
 	params: {
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		id: string | number | any
+		id: string
 	}
 }
 
 export default function ProductPage({ params }: Props) {
-	const productId = use(params.id)
-	const products = useProducts() //
+  const { t } = useTranslation()
+	const productId = +params.id
+	const products = useProducts() // 
 	const product = products.find(p => p.id === productId)
 
 	if (!product)
@@ -23,8 +22,6 @@ export default function ProductPage({ params }: Props) {
 				Product not found.
 			</p>
 		)
-	// eslint-disable-next-line react-hooks/rules-of-hooks
-	const { t } = useTranslation()
 
 	return (
 		<div className='min-h-screen bg-white p-6 sm:p-12'>
