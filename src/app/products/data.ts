@@ -1,7 +1,7 @@
 'use client'
 import { useTranslation } from 'react-i18next'
 
-import dress from '../../../public/afghangirl.jpeg'
+import dress from '../../../public/dress.jpeg'
 import blackDress from '../../../public/download1.jpeg'
 import afghanGirl from '../../../public/afghangirl.jpeg'
 import lawangDress from '../../../public/download7.jpeg'
