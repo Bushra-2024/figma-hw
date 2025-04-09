@@ -1,27 +1,25 @@
 'use client'
 
-import Image from 'next/image'
-import useProducts from '../data'
+import { useParams } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
+import useProducts from '../data' // adjust the path if needed
+import Image from 'next/image'
 
-type Props = {
-	params: {
-		id: string
-	}
-}
+export default function ProductPage() {
+	const { t } = useTranslation()
+	const params = useParams()
 
-export default function ProductPage({ params }: Props) {
-  const { t } = useTranslation()
-	const productId = +params.id
-	const products = useProducts() // 
-	const product = products.find(p => p.id === productId)
+	const productId = params?.id ? Number(params.id) : null
+	const products = useProducts()
+	const product = productId ? products.find(p => p.id === productId) : null
 
-	if (!product)
+	if (!product) {
 		return (
 			<p className='p-10 text-center text-red-500 text-lg'>
 				Product not found.
 			</p>
 		)
+	}
 
 	return (
 		<div className='min-h-screen bg-white p-6 sm:p-12'>

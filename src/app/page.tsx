@@ -25,6 +25,7 @@ import { useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 
 export default function Home() {
+	const { t } = useTranslation()
 	const router = useRouter()
 
 	const progressCircle = useRef<SVGSVGElement | null>(null)
@@ -37,13 +38,12 @@ export default function Home() {
 				String(1 - progress)
 			)
 		}
-		
+
 		if (progressContent.current) {
 			progressContent.current.textContent = `${Math.ceil(time / 1000)}s`
 		}
 	}
 
-	const { t } = useTranslation()
 	return (
 		<div className='max-w-[1400px] m-auto'>
 			<section className='flex lg:flex-row flex-col text-center px-[8%] justify-between items-center'>

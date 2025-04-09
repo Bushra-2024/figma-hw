@@ -2,14 +2,17 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import useProducts from './data' // ✅ use the function
+import useProducts from './data'
+import { useTranslation } from 'react-i18next'
 
 const Products = () => {
-  const products = useProducts() // ✅ call it to get the array
-
+  const { t } = useTranslation()
+  const products = useProducts() 
+  
   return (
     <div className="p-[2%] px-[5%]">
-      <h1 className="font-[WindSong] font-semibold text-[40px] text-[#107E5F] pl-[5%]">Products</h1>
+      <h1 className="font-[WindSong] font-semibold text-[40px] text-[#107E5F] pl-[5%]">					{t('nav.products')}
+      </h1>
 
       <div className="flex flex-wrap gap-[20px] justify-center p-[5%]">
         {products.map((product) => (
