@@ -7,12 +7,13 @@ import useProducts from '../data'
 
 type Props = {
 	params: {
-		id: string | number | unknown
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		id: string | number | any
 	}
 }
 
 export default function ProductPage({ params }: Props) {
-	const productId = use(params?.id)
+	const productId = use(params.id)
 	const products = useProducts() //
 	const product = products.find(p => p.id === productId)
 
